@@ -1,0 +1,8 @@
+{
+    "discordWebhookUrl": "INSERT YOUR DISCORD WEBHOOK URL HERE",
+    "slackWebhookUrl": "INSERT YOUR SLACK WEBHOOK URL HERE",
+    "botName": "INSERT YOUR BOT NAME HERE",
+    "botAvatarUrl": "INSERT YOUR BOT AVATAR URL HERE",
+    "language": "en",
+    "timeZone": "America/New_York"
+}

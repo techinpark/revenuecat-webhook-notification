@@ -1,0 +1,42 @@
+{
+    "en": {
+        "INITIAL_PURCHASE": "🎉 User made their first purchase!",
+        "RENEWAL": "🔄 Subscription was renewed.",
+        "CANCELLATION": "❌ Subscription was cancelled.",
+        "UNCANCELLATION": "✅ Subscription was uncancelled.",
+        "BILLING_ISSUE": "⚠️ There was a problem with billing.",
+        "NON_RENEWING_PURCHASE": "💰 User made a non-renewing purchase.",
+        "UNHANDLED_EVENT": "❓ Unhandled Event Type.",
+        "PRODUCT_ID": "Product ID",
+        "PRICE": "Price",
+        "USER_ID": "User ID",
+        "COUNTRY": "Country",
+        "PURCHASE_DATE": "Purchase Date",
+        "EXPIRATION_DATE": "Expiration Date",
+        "PERIOD_TYPE": "Period Type",
+        "ENVIRONMENT": "Environment",
+        "ENTITLEMENTS": "Entitlements",
+        "STORE": "Store",
+        "EMAIL": "Email"
+    },
+    "ko": {
+        "INITIAL_PURCHASE": "🎉 사용자가 첫 구매를 했습니다!",
+        "RENEWAL": "🔄 구독이 갱신되었습니다.",
+        "CANCELLATION": "❌ 구독이 취소되었습니다.",
+        "UNCANCELLATION": "✅ 구독 취소가 해제되었습니다.",
+        "BILLING_ISSUE": "⚠️ 결제 문제가 발생하였습니다.",
+        "NON_RENEWING_PURCHASE": "💰 사용자가 구매를 했습니다.",
+        "UNHANDLED_EVENT": "❓ 처리되지 않은 이벤트 유형.",
+        "PRODUCT_ID": "제품 ID",
+        "PRICE": "가격",
+        "USER_ID": "사용자 ID",
+        "COUNTRY": "국가",
+        "PURCHASE_DATE": "구매 일시",
+        "EXPIRATION_DATE": "만료 일시",
+        "PERIOD_TYPE": "기간 유형",
+        "ENVIRONMENT": "환경",
+        "ENTITLEMENTS": "엔타이틀먼트",
+        "STORE": "스토어",
+        "EMAIL": "이메일"
+    }
+}

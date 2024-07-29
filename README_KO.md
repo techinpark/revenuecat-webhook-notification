@@ -11,7 +11,7 @@
 ## ✨ 주요 기능
 ![](.github/images/screenshot.png)
 
-- 🪝 RevenueCat 웹훅 이벤트 처리
+- 🚀 RevenueCat 웹훅 이벤트 처리
 - 💬 Discord로 포맷된 알림 전송
 - 🌐 다국어 지원
 - 🏳️ 알림에 국가 국기와 이름 포함

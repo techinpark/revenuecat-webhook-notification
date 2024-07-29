@@ -10,7 +10,7 @@ This project provides a webhook handler for RevenueCat events, sending notificat
 ## ✨ Features
 ![](.github/images/screenshot.png)
 
-- �hook Handles RevenueCat webhook events
+- 🚀 hook Handles RevenueCat webhook events
 - 💬 Sends formatted notifications to Discord / Slack
 - 🌐 Supports multiple languages
 - 🏳️ Includes country flags and names in notifications

@@ -1,6 +1,6 @@
 # 🚀 RevenueCat Webhook Notification
 
-![stars](https://img.shields.io/github/stars/techinpark/revenuecat-webhook-notification?color=yellow&style=social)
+![stars](https://img.shields.io/github/stars/techinpark/revenuecat-webhook-notification)
 ![forks](https://img.shields.io/github/forks/techinpark/revenuecat-webhook-notification?style=social)
 
 [한국어로 보기](./README_KO.md)

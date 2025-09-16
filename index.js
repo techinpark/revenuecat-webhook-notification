@@ -86,6 +86,7 @@ function getColorForEventType(type) {
         CANCELLATION: 0xff0000,      // Red
         UNCANCELLATION: 0x00ffff,    // Cyan
         BILLING_ISSUE: 0xffff00,     // Yellow
+        EXPIRATION: 0xff9900,        // Orange
         UNHANDLED_EVENT: 0x808080    // Gray
     };
     return colors[type] || 0x808080;

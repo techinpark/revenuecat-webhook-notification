@@ -26,6 +26,7 @@ function createDiscordMessage(event) {
     const {
         type,
         product_id,
+        new_product_id,
         price,
         currency,
         app_user_id,
@@ -49,6 +50,14 @@ function createDiscordMessage(event) {
     const fields = [
         { name: selectedLocalization["USER_ID"], value: app_user_id || "N/A", inline: false },
         { name: selectedLocalization["PRODUCT_ID"], value: product_id || "N/A", inline: false },
+    ];
+
+    // Add new_product_id field for PRODUCT_CHANGE events
+    if (type === 'PRODUCT_CHANGE' && new_product_id) {
+        fields.push({ name: selectedLocalization["NEW_PRODUCT_ID"], value: new_product_id || "N/A", inline: false });
+    }
+
+    fields.push(
         { name: selectedLocalization["PRICE"], value: price ? `${price} ${currency}` : "N/A", inline: false },
         { name: selectedLocalization["STORE"], value: store || "N/A", inline: false },
         { name: selectedLocalization["ENVIRONMENT"], value: environment || "N/A", inline: false },
@@ -56,8 +65,8 @@ function createDiscordMessage(event) {
         { name: selectedLocalization["ENTITLEMENTS"], value: entitlement_ids ? entitlement_ids.join(", ") : "N/A", inline: false },
         { name: selectedLocalization["COUNTRY"], value: `${countryInfo.flag} ${countryInfo.name}`, inline: true },
         { name: selectedLocalization["PURCHASE_DATE"], value: formatDate(purchased_at_ms), inline: true },
-        { name: selectedLocalization["EXPIRATION_DATE"], value: formatDate(expiration_at_ms), inline: true },
-    ];
+        { name: selectedLocalization["EXPIRATION_DATE"], value: formatDate(expiration_at_ms), inline: true }
+    );
 
     if (subscriber_attributes && subscriber_attributes.$email) {
         fields.push({ name: selectedLocalization["EMAIL"], value: subscriber_attributes.$email.value || "N/A", inline: false });
@@ -87,6 +96,7 @@ function getColorForEventType(type) {
         UNCANCELLATION: 0x00ffff,    // Cyan
         BILLING_ISSUE: 0xffff00,     // Yellow
         EXPIRATION: 0xff9900,        // Orange
+        PRODUCT_CHANGE: 0x9b59b6,   // Purple
         UNHANDLED_EVENT: 0x808080    // Gray
     };
     return colors[type] || 0x808080;
